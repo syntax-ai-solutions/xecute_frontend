@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth"; // add this
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCiZ97K3OykYIS39TDZS1gl14BzY6Xsz3Q",
-  authDomain: "post-pilot-syntax.firebaseapp.com",
-  projectId: "post-pilot-syntax",
-  storageBucket: "post-pilot-syntax.firebasestorage.app",
-  messagingSenderId: "234510384462",
-  appId: "1:234510384462:web:cc6a3695f45507cb6e721f",
-  measurementId: "G-2WFW7E7NV1"
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId,
 };
 
 // Initialize Firebase
